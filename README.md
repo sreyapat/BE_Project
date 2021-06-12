@@ -6,8 +6,6 @@
 ![](./images/assets/Top-View.gif)<br> 
 *Vehicle* *Position* *+* *collision* *time* *superposed* *in* *the* *top* *view* 
 
-Accompanying article https://towardsdatascience.com/copilot-driving-assistance-635e1a50f14
-
 
 Global annual road accidents fatalities total about 1.5 million which is just about the population of Mauritius. 90% of these occur in low and middle income countries which have less than half of the total vehicles in the world. Advanced driver-assistance systems (ADAS) Lane detection, collision warning are present in less than 0.1% of the vehicles. They are almost non existent in developing countries.
 Median Smartphone ownership in emerging economies is about 10 times as high as that of four wheeler. While we already have semi autonomous vehicles running about in parts of the world. This repository checks how close we might come to using a mobile computing platform as an ADAS copilot. 
@@ -15,7 +13,7 @@ Median Smartphone ownership in emerging economies is about 10 times as high as t
 ## DOWNLOAD WEIGHTS AND CODE
 
 ```python
-! git clone https://github.com/visualbuffer/copilot.git
+! git clone https://github.com/sreyapat/BE_Project
 ! mv copilot/* ./
 ! wget -P ./model_data/ https://s3-ap-southeast-1.amazonaws.com/deeplearning-mat/backend.h5
 ```
@@ -61,10 +59,6 @@ frame.process_video(file_path, 1,\
 *Detecting* *lane* *change* *automatically*
 
 
-## Notebooks
-| DIRECTORY  | COLAB |
-| ------------- | ------------- |
-|./notebooks/coPilot.ipynb|https://colab.research.google.com/drive/1CdqDXZqssDgSC35W4A-4Gp8kfqzyPKug|
 
 
 ## Ref:

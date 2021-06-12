@@ -158,6 +158,9 @@ class LANE_HISTORY:
         if abs(self.lane_offset) > self.width //2 :
             if self.lane_offset < 0 :
                 print("\n\rLANE CHANGE TO RIGHT\033[F")
+                sound_file1 = '1.wav'
+                IPython.display.display(IPython.display.Audio(sound_file1, autoplay=True))
+                time.sleep(1)
                 self.poly_history = create_queue(self.poly_history.maxlen)
                 self.leftx =  self.rightx
                 self.rightx  =  create_queue(length = self.rightx.maxlen)
@@ -165,6 +168,9 @@ class LANE_HISTORY:
                 self.previous_centers =  self.previous_centers+self.width
             else :
                 print("\n\rLANE CHANGE TO LEFT\033[F")
+                sound_file2 = '2.wav'
+                IPython.display.display(IPython.display.Audio(sound_file2, autoplay=True))
+                time.sleep(1)
                 self.poly_history = create_queue(self.poly_history.maxlen)
                 self.rightx =  self.leftx
                 self.leftx  =  create_queue(length = self.leftx.maxlen)

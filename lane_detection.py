@@ -105,6 +105,9 @@ class OBSTACLE(BoundBox):
             self.update_coord(box)
             self.update_score(box)
 
+from gtts import gTTS #Import Google Text to Speech
+import IPython
+import time
 
 
 class LANE_HISTORY:
